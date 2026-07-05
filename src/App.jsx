@@ -1,7 +1,6 @@
+import logo from "./assets/ui-logo.png.webp";
 import { useState } from "react";
 import "./App.css";
-import logo from "./assets/ui-logo.png";
-
 function App() {
   const [studentId, setStudentId] = useState("");
   const [password, setPassword] = useState("");
@@ -24,12 +23,7 @@ function App() {
           <h1>Student Result Portal</h1>
           <p>2024/2025 Academic Session</p>
 
-          <button
-            className="logout-btn"
-            onClick={() => setLoggedIn(false)}
-          >
-            Logout
-          </button>
+
         </div>
 
         <div className="profile-section">
@@ -83,9 +77,12 @@ function App() {
           <div className="results-header">
             <h2>First Semester Results</h2>
 
-            <button className="download-btn">
-              Download Result
-            </button>
+           <button
+  className="download-btn"
+  onClick={() => alert("Download feature coming soon!")}
+>
+  Download Result
+</button>
           </div>
 
           <table>
@@ -168,7 +165,10 @@ function App() {
   return (
     <div className="login-page">
       <div className="login-left">
-        <img src={logo} alt="UI Logo" />
+        <img
+  src="https://upload.wikimedia.org/wikipedia/en/7/73/University_of_Ibadan_logo.png"
+  alt="University of Ibadan Logo"
+/>
 
         <h1>Distance Learning Centre</h1>
 
